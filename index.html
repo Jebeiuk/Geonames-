@@ -1,0 +1,41 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta name="author" content="Simon Garavan" >
+    <meta charset="utf-8">
+    <meta name="description" content=">A HTML application with a table of other API’s.">
+    <title>A Simple API Table</title>
+    <link rel="stylesheet" href="./libs/CSS/TableStyles.css">
+
+</head>
+
+<body>
+
+    <table>
+        <tr><th>API Name</th><th>API Description</th><th></th></tr>
+        
+        <tr><td> Postal Codes</td><td>Returns a list of postal codes and places</td><td><button id="postCodes">Submit</button></td></tr>
+        <tr><td> Weather</td><td>Returns a list of weather stations with the most recent weather observation</td><td><button id="weather">Submit</button></td></tr>
+        <tr><td> Elevation</td><td>Returns the elevation for the given latitude/longitude</td><td><button id="elevation">Submit</button></td></tr>
+        <tr><td rowspan="3" colspan="3" id="results">Results</td></tr>
+    </table>
+
+    <script type="text/javascript">
+
+        document.getElementById("postCodes").onclick = function () {
+            document.getElementById("results").innerHTML = "<iframe src='./postalCodes.html'></iframe>";
+        };
+        document.getElementById("weather").onclick = function () {
+            document.getElementById("results").innerHTML = "<iframe src='./weather.html'></iframe>";
+        };
+            document.getElementById("elevation").onclick = function () {
+            document.getElementById("results").innerHTML = "<iframe src='./elevation.html'></iframe>";
+        };
+        
+    </script>
+
+</body>
+
+</html>

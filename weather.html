@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Returns a list of weather stations with the most recent weather observation">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <select id="north">
+        <option value="44.1">44.1</option>
+    </select>
+    <select id="south">
+        <option value="-9.9">-9.9</option>
+    </select>
+    <select id="east">
+        <option value="-22.4">-22.4</option>
+    </select>
+
+    <select id="west">
+        <option value="55.2">55.2</option>
+    </select>
+
+    <button id="btnRun">Run</button>
+
+    <br><br>
+
+    <div id="divResults">
+        <table>
+            <tr>
+                <td align="right">
+                    Weather:
+                </td>
+                <td id="txtWeather">
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script type="application/javascript" src="libs/JS/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/JS/weather.js"></script>
+</body>
+</html>

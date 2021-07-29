@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Returns the elevation for the given latitude/longitude">
+    <title>Elevation</title>
+</head>
+
+<body>
+
+    <select id="lat">
+        <option value="50.01">50.01</option>
+    </select>
+    <select id="lng">
+        <option value="10.2">10.2</option>
+    </select>
+
+    <button id="btnRun">Run</button>
+
+    <br><br>
+        
+    <div id="divResults">
+        <table>
+            <tr>
+                <td align="right">
+                    Elevation:
+                </td>
+                <td id="txtElevation">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script type="application/javascript" src="libs/JS/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/JS/elevation.js"></script>
+</body>
+</html>

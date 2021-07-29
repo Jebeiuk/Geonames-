@@ -1,0 +1,57 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Returns a list of postalcodes and places.">
+    <title>Address</title>
+    
+</head>
+
+<body>
+    
+    <select id="postalcodes">
+        <option value="Km">Km</option>
+    </select>
+    <select id="country">
+        <option value="Km">Km</option>
+    </select>
+    <select id="radius">
+        <option value="Km">Km</option>
+    </select>
+
+    <button id="btnRun">Run</button>
+
+    <br><br>
+
+    <div id="divResults">
+        <table>
+            <tr>
+                <td align="right">
+                    Postal Code:
+                </td>
+                <td id="txtPostCode">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Country:
+                </td>
+                <td id="txtCountry">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    Radius:
+                </td>
+                <td id="txtRadius">
+                </td>
+            </tr>
+         </table>
+    </div>
+    
+    <script type="application/javascript" src="./libs/JS/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="./libs/JS/postalCodes.js"></script>
+</body>
+</html>
